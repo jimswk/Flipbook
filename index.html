@@ -55,7 +55,7 @@
         pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
 
         const pdfUrl = 'majlis.pdf'; 
-        const BLANK_PIXEL_THRESHOLD = 0.005; // 0.5% - Sesuaikan jika perlu (0.001 = 0.1%, 0.01 = 1%)
+        const BLANK_PIXEL_THRESHOLD = 0.005; 
 
         pdfjsLib.getDocument(pdfUrl).promise.then(async function(pdf) {
             const totalPages = pdf.numPages;
